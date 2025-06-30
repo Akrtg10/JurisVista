@@ -32,9 +32,38 @@
       text-decoration: none;
       font-weight: bold;
     }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
     .main {
+      flex: 3;
       padding: 2rem;
-      text-align: center;
+    }
+    .sidebar {
+      flex: 1;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-left: 1px solid #ddd;
+    }
+    .sidebar h3 {
+      border-bottom: 2px solid #003366;
+      padding-bottom: 0.5rem;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .sidebar li {
+      margin-bottom: 1rem;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: #003366;
+    }
+    .sidebar small {
+      display: block;
+      color: #666;
     }
     footer {
       background-color: #001f3f;
@@ -58,12 +87,27 @@
     <a href="about.html">About</a>
     <a href="search.html">Search</a>
   </nav>
-  <div class="main">
-    <h1>Welcome to JurisVista</h1>
-    <p>
-      <strong>JurisVista</strong> is an independent legal platform co-founded by <strong>Ashok Kumar Ratan</strong> and <strong>Ravi Shanker Bhatt</strong>, both 3rd-year BA.LL.B students at Assam University. The platform aims to bring clarity to complex legal ideas through articles, case commentaries, legal blogs, and maxims for students, professionals, and general readers.
-    </p>
+
+  <div class="container">
+    <div class="main">
+      <h1>Welcome to JurisVista</h1>
+      <p>
+        <strong>JurisVista</strong> is an independent legal platform co-founded by <strong>Ashok Kumar Ratan</strong> and <strong>Ravi Shanker Bhatt</strong>, both 3rd-year BA.LL.B students at Assam University. The platform aims to bring clarity to complex legal ideas through articles, case commentaries, legal blogs, and maxims for students, professionals, and general readers.
+      </p>
+    </div>
+
+    <aside class="sidebar">
+      <h3>Recent Posts</h3>
+      <ul>
+        <li><a href="blog.html">📝 Cyberbullying Law<br><small>Type: Blog</small></a></li>
+        <li><a href="blog.html">📜 UCC Debate<br><small>Type: Blog</small></a></li>
+        <li><a href="blog.html">📚 Maneka Gandhi Case<br><small>Type: Case Law</small></a></li>
+        <li><a href="articles.html">🧠 Disability Law<br><small>Type: Article</small></a></li>
+        <li><a href="maxims.html">⚖️ Actus Reus<br><small>Type: Maxim</small></a></li>
+      </ul>
+    </aside>
   </div>
+
   <footer>&copy; 2025 JurisVista | Co-Founders: Ashok Kumar Ratan & Ravi Shanker Bhatt</footer>
 </body>
 </html>
