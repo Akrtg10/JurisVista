@@ -79,16 +79,23 @@ nav a:hover {
   padding-left: 0;
 }
 
+/* 🔧 Updated sidebar styles for legal icon instead of image */
 .sidebar li {
-  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.sidebar li::before {
+  content: "⚖️";
+  font-size: 1rem;
+  margin-right: 0.3rem;
 }
 
 .sidebar li img {
-  width: 20px;
-  height: 20px;
+  display: none;
 }
 
 .sidebar a {
