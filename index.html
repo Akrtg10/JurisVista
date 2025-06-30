@@ -1,172 +1,79 @@
-/* JurisVista - styles.css */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JurisVista</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-body {
-  font-family: 'Times New Roman', serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #222;
-}
+  <header>
+    <img src="https://i.ibb.co/C3T1X0K/logo.png" alt="JurisVista Logo">
+    <h1>JurisVista</h1>
+    <p>Legal Insight. Academic Excellence.</p>
+  </header>
 
-header {
-  background-color: #001f3f;
-  color: white;
-  padding: 1rem 2rem;
-  text-align: center;
-}
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Articles</a>
+    <a href="#">Case Notes</a>
+    <a href="#">Submit</a>
+    <a href="#">Contact</a>
+  </nav>
 
-header img {
-  height: 60px;
-}
+  <div class="container">
+    <div class="main">
+      <div class="featured-post">
+        📌 <strong>Featured:</strong> Admissibility of Electronic Evidence under Section 65B IEA & Section 63(4) BSA
+      </div>
+      <h1>Welcome to JurisVista</h1>
+      <p>
+        JurisVista is a student-driven legal platform that publishes articles, case commentaries, research papers, and more.
+        Whether you're a law student, scholar, or practitioner, this is your go-to hub for legal academia and awareness.
+      </p>
+    </div>
 
-nav {
-  background-color: #003366;
-  text-align: center;
-  padding: 0.5rem 0;
-}
+    <aside class="sidebar">
+      <h3>Recent Posts</h3>
+      <ul>
+        <li>
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Arrow">
+          <a href="#">Cyber Law & AI Ethics</a>
+        </li>
+        <li>
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Arrow">
+          <a href="#">Abetment to Suicide: Legal Trends</a>
+        </li>
+        <li>
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Arrow">
+          <a href="#">Understanding Section 63(4) BSA</a>
+        </li>
+      </ul>
+    </aside>
+  </div>
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
-  transition: color 0.3s;
-}
+  <section class="articles">
+    <h2>Latest Articles</h2>
+    <div class="article">
+      <h3><a href="#">Balancing Free Speech and Hate Speech in India</a></h3>
+      <p>An in-depth analysis of constitutional limits and case law on speech and expression in digital times.</p>
+    </div>
+    <div class="article">
+      <h3><a href="#">Role of Gram Sabha in Land Rights and Encroachment</a></h3>
+      <p>A rural governance perspective based on legal field research and local jurisprudence.</p>
+    </div>
+  </section>
 
-nav a:hover {
-  color: #ffd700;
-  text-decoration: underline;
-}
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:jurisvista@gmail.com">jurisvista@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/jurisvista" target="_blank">@jurisvista</a></p>
+  </section>
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 2rem auto;
-  gap: 1rem;
-}
+  <footer>
+    &copy; 2025 JurisVista | Built with HTML & CSS by Ashok Kumar Ratan
+  </footer>
 
-.main {
-  flex: 3;
-  padding: 2rem;
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  border-radius: 8px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.sidebar {
-  flex: 1;
-  padding: 1.5rem;
-  background-color: #ffffff;
-  border-left: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0,0,0,0.03);
-  border-radius: 8px;
-  margin-top: 2.5rem;
-  max-height: 500px;
-  overflow-y: auto;
-}
-
-.sidebar h3 {
-  border-bottom: 2px solid #003366;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.sidebar li {
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.sidebar li img {
-  width: 20px;
-  height: 20px;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #003366;
-  font-weight: bold;
-}
-
-.sidebar small {
-  display: block;
-  color: #666;
-  font-weight: normal;
-}
-
-.featured-post {
-  background: #fdf6e3;
-  padding: 1rem;
-  border-left: 4px solid gold;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-}
-
-.content, .articles, .contact-section {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  border-radius: 8px;
-}
-
-.main h1, .content h1, .articles h2, .contact-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-p, .article h3 {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.article {
-  margin-bottom: 2rem;
-}
-
-.article a {
-  color: #001f3f;
-  text-decoration: underline;
-}
-
-footer {
-  background-color: #001f3f;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
-
-@media (max-width: 768px) {
-  nav a {
-    display: block;
-    margin: 0.5rem 0;
-  }
-
-  .container {
-    flex-direction: column;
-  }
-
-  .main, .sidebar, .content, .articles, .contact-section {
-    padding: 1rem;
-    margin: 1rem;
-  }
-
-  .sidebar {
-    border-left: none;
-    border-top: 1px solid #ddd;
-    margin-top: 0;
-  }
-}
+</body>
+</html>
