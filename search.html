@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search – JurisVista</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .search-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .result {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-left: 4px solid #003366;
+    }
+    .result h3 {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>JurisVista – Search</h2>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="articles.html">Articles</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="maxims.html">Maxims</a>
+    <a href="search.html">Search</a>
+  </nav>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search articles, blogs, case laws, or maxims...">
+    <div id="results"></div>
+  </div>
+
+  <footer>
+    &copy; 2025 JurisVista | Ashok Kumar Ratan
+  </footer>
+
+  <script>
+    const data = [
+      { title: "Cyberbullying and Online Harassment", link: "articles.html" },
+      { title: "Disability Law in India", link: "articles.html" },
+      { title: "Epuru Sudhakar v. Govt. of A.P.", link: "articles.html" },
+      { title: "Why India Needs a Cyberbullying Law", link: "blog.html" },
+      { title: "Uniform Civil Code Debate", link: "blog.html" },
+      { title: "Maneka Gandhi Case Summary", link: "blog.html" },
+      { title: "Actus Reus non facit reum nisi mens sit rea", link: "maxims.html" },
+      { title: "Audi Alteram Partem", link: "maxims.html" }
+    ];
+
+    document.getElementById("searchInput").addEventListener("input", function() {
+      const query = this.value.toLowerCase();
+      const results = data.filter(item => item.title.toLowerCase().includes(query));
+      document.getElementById("results").innerHTML = results.map(item => `<div class='result'><h3><a href="${item.link}">${item.title}</a></h3></div>`).join("");
+    });
+  </script>
+</body>
+</html>
