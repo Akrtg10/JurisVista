@@ -64,6 +64,8 @@ nav a:hover {
   box-shadow: 0 0 10px rgba(0,0,0,0.03);
   border-radius: 8px;
   margin-top: 2.5rem;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .sidebar h3 {
@@ -79,6 +81,14 @@ nav a:hover {
 
 .sidebar li {
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar li img {
+  width: 20px;
+  height: 20px;
 }
 
 .sidebar a {
@@ -93,7 +103,17 @@ nav a:hover {
   font-weight: normal;
 }
 
-.content, .articles, .contact-section {
+.featured-post {
+  background: #fdf6e3;
+  padding: 1rem;
+  border-left: 4px solid gold;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.content,
+.articles,
+.contact-section {
   max-width: 900px;
   margin: 2rem auto;
   padding: 1.5rem;
@@ -102,13 +122,17 @@ nav a:hover {
   border-radius: 8px;
 }
 
-.main h1, .content h1, .articles h2, .contact-section h2 {
+.main h1,
+.content h1,
+.articles h2,
+.contact-section h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-p, .article h3 {
+p,
+.article h3 {
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -131,6 +155,7 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Responsive layout */
 @media (max-width: 768px) {
   nav a {
     display: block;
@@ -141,7 +166,11 @@ footer {
     flex-direction: column;
   }
 
-  .main, .sidebar, .content, .articles, .contact-section {
+  .main,
+  .sidebar,
+  .content,
+  .articles,
+  .contact-section {
     padding: 1rem;
     margin: 1rem;
   }
