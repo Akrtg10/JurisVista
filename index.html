@@ -5,120 +5,11 @@
   <title>Verdicto</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: 'Times New Roman', serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #001f3f;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    nav {
-      background-color: #003366;
-      text-align: center;
-      padding: 0.5rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #ffd700;
-    }
-    .container {
-      display: flex;
-      justify-content: space-between;
-      max-width: 1200px;
-      margin: auto;
-      padding: 1rem;
-      gap: 1.5rem;
-    }
-    .main {
-      flex: 3;
-      padding: 1rem;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      border-radius: 8px;
-    }
-    .sidebar {
-      flex: 1;
-      padding: 1rem;
-      background-color: #f0f0f0;
-      border-left: 1px solid #ccc;
-      border-radius: 8px;
-      max-height: 500px;
-      overflow-y: auto;
-    }
-    .sidebar h3 {
-      border-bottom: 2px solid #003366;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
-    .sidebar li {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-    .sidebar img {
-      width: 16px;
-      margin-right: 8px;
-    }
-    .featured-post {
-      background-color: #ffffcc;
-      padding: 0.5rem;
-      border-left: 4px solid #ffcc00;
-      margin-bottom: 1rem;
-      font-weight: bold;
-    }
-    .articles {
-      max-width: 900px;
-      margin: auto;
-      padding: 1rem;
-    }
-    .article {
-      background-color: #ffffff;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    .contact-section {
-      max-width: 600px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-      border-radius: 8px;
-    }
-    footer {
-      background-color: #001f3f;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-    }
-  </style>
 </head>
 <body>
 
   <header>
-    <img src="https://i.ibb.co/C3T1X0K/logo.png" alt="Verdicto Logo" style="height: 60px;">
+    <img src="https://i.ibb.co/C3T1X0K/logo.png" alt="Verdicto Logo">
     <h1>Verdicto</h1>
     <p>Legal Insight. Academic Excellence.</p>
   </header>
@@ -138,50 +29,44 @@
       <div class="featured-post">
         📌 <strong>Featured:</strong> Admissibility of Electronic Evidence under Section 65B IEA & Section 63(4) BSA
       </div>
+
       <h1>Welcome to Verdicto</h1>
       <p>
         Verdicto is a student-driven legal platform that publishes articles, case commentaries, research papers, and more.
         Whether you're a law student, scholar, or practitioner, this is your go-to hub for legal academia and awareness.
       </p>
+
+      <section class="articles">
+        <h2>Latest Articles</h2>
+        <div class="article">
+          <h3><a href="#">Balancing Free Speech and Hate Speech in India</a></h3>
+          <p>An in-depth analysis of constitutional limits and case law on speech and expression in digital times.</p>
+        </div>
+        <div class="article">
+          <h3><a href="#">Role of Gram Sabha in Land Rights and Encroachment</a></h3>
+          <p>A rural governance perspective based on legal field research and local jurisprudence.</p>
+        </div>
+      </section>
     </div>
 
     <aside class="sidebar">
       <h3>Recent Posts</h3>
       <ul>
-        <li><img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Arrow">
-          <a href="#">Cyber Law & AI Ethics</a>
-        </li>
-        <li><img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Arrow">
-          <a href="#">Abetment to Suicide: Legal Trends</a>
-        </li>
-        <li><img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Arrow">
-          <a href="#">Understanding Section 63(4) BSA</a>
-        </li>
+        <li><a href="#">Cyber Law & AI Ethics</a></li>
+        <li><a href="#">Abetment to Suicide: Legal Trends</a></li>
+        <li><a href="#">Understanding Section 63(4) BSA</a></li>
       </ul>
     </aside>
   </div>
 
-  <section class="articles">
-    <h2>Latest Articles</h2>
-    <div class="article">
-      <h3><a href="#">Balancing Free Speech and Hate Speech in India</a></h3>
-      <p>An in-depth analysis of constitutional limits and case law on speech and expression in digital times.</p>
-    </div>
-    <div class="article">
-      <h3><a href="#">Role of Gram Sabha in Land Rights and Encroachment</a></h3>
-      <p>A rural governance perspective based on legal field research and local jurisprudence.</p>
-    </div>
-  </section>
-
   <section class="contact-section">
-    <h2>Contact Verdicto</h2>
-    <p>Email: <strong>ratan.ashok.k.lawyer18@gmail.com</strong></p>
-    <p>Phone: <strong>+91 8936914755</strong></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/ashokratan8936" target="_blank">ashokratan8936</a></p>
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:jurisvista@gmail.com">jurisvista@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/jurisvista" target="_blank">@jurisvista</a></p>
   </section>
 
   <footer>
-    &copy; 2025 Verdicto | Built with HTML & CSS by Ashok Kumar Ratan & Ravi Shanker Bhatt
+    &copy; 2025 Verdicto | Built with HTML & CSS by Ashok Kumar Ratan
   </footer>
 
 </body>
