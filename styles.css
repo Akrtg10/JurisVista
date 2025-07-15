@@ -121,15 +121,29 @@ nav a:hover {
   font-weight: bold;
 }
 
+/* Updated Section Styling */
 .content,
 .articles,
 .contact-section {
   max-width: 900px;
   margin: 2rem auto;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
+}
+
+/* Consistent Spacing in Articles and Contact */
+.articles .article,
+.contact-section p {
+  margin-bottom: 1rem;
+}
+
+.articles a,
+.contact-section a {
+  color: #001f3f;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .main h1,
